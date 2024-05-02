@@ -4,10 +4,12 @@ using namespace std;
 int main()
 {
     int cnt = 0;
+    int n;
 
     for (int i = 1; i<=10;i++)
     {
-        if (i%2==1)
+        cin >> n;
+        if (n%2==1)
         {
             cnt += 1;
         }
