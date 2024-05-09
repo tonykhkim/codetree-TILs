@@ -11,7 +11,7 @@ int main()
     {
         cin >> old;
 
-        if (old > 29)
+        if (old > 29 || old < 20)
         {
             break;
         }
