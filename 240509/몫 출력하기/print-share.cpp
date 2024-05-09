@@ -10,7 +10,7 @@ int main()
     {
         cin >> n;
         
-        if (cnt > 3)
+        if (cnt >= 3)
         {
             break;
         }
@@ -18,9 +18,12 @@ int main()
         if (n%2==0)
         {
             cout << n/2 << endl;
-            
+            cnt += 1;
+            //cout << "cnt: " << cnt << endl;
         }
-        cnt += 1;
+
+        
+        
     }
     return 0;
 }
