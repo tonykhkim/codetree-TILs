@@ -14,6 +14,9 @@ int main()
             {
                 cout << "* ";
             }
+        }
+        else
+        {
             for (int k=1;k<=i/2;k++)
             {
                 cout << "* ";
