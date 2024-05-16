@@ -14,6 +14,10 @@ int main()
             {
                 cout << "  ";
             }
+            else if (i>1 && j%2==1)
+            {
+                cout << "  ";
+            }
             else
             {
                 cout << "* ";
