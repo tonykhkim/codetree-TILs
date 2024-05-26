@@ -23,6 +23,18 @@ int main()
             }
             break;
         }
+        else if (i==9)
+        {
+            for (int j=i;j>=0;j--)
+            {
+                if (arr[j]%2==0)
+                {
+                    cnt += 1;
+                    sum += arr[j];
+                }
+            }
+            break;
+        }
     }
     cout << cnt << ' ' << sum;
     return 0;
