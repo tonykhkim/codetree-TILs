@@ -18,7 +18,6 @@ int main()
             }
             break;
         }
-        // break;
     }   
     cout << sum;
     return 0;
