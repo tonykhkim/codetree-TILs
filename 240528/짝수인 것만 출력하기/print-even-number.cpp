@@ -17,7 +17,7 @@ int main()
     {
         if (arr[j]%2==0)
         {
-            cout << arr[j];
+            cout << arr[j] << " ";
         }
     }
     return 0;
