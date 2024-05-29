@@ -15,7 +15,7 @@ int main()
         a = a / b;
     }
 
-    for (int i=0;i<4;i++)
+    for (int i=0;i<b;i++)
     {
         sum += cnt_arr[i]*cnt_arr[i];
     }
