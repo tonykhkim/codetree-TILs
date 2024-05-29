@@ -7,7 +7,7 @@ int main()
     int sum = 0;
     cin >> a >> b;
 
-    int cnt_arr[b-1]={};
+    int cnt_arr[b]={};
 
     while(a>1)
     {
