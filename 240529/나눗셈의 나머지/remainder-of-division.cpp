@@ -3,11 +3,12 @@ using namespace std;
 
 int main()
 {
-    int cnt_arr[4]={};
     int a,b;
     int sum = 0;
-
     cin >> a >> b;
+
+    int cnt_arr[b-1]={};
+
     while(a>1)
     {
         cnt_arr[a % b]++;
