@@ -34,7 +34,6 @@ int main()
             }
         }
     }
-    cout << cnt << endl;
 
     if (cnt == n2)
     {
