@@ -8,6 +8,7 @@ int main()
 
     int A[n1];
     int B[n2];
+    int cnt;
 
     for (int i=0;i<n1;i++)
     {
@@ -21,7 +22,7 @@ int main()
 
     for (int i=0;i<=n1-n2;i++)
     {
-        int cnt = 0;
+        cnt = 0;
 
         for (int j=0;j<n2;j++)
         {
