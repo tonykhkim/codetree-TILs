@@ -5,7 +5,7 @@ int main()
 {
     int n,q;
     int q1,q2,q3;
-    int cnt = 0;
+    int cnt;
     
     cin >> n >> q;
 
@@ -29,6 +29,8 @@ int main()
         {
             cin >> q2;
             
+            cnt = 0;
+
             for (int j=0;j<n;j++)
             {
                 if (arr[j]==q2)
