@@ -8,9 +8,12 @@ int main()
 
     int index = -1;
 
+    char ch;
+    cin >> ch;
+
     for (int i=0;i<6;i++)
     {
-        if (arr[i]=='L')
+        if (arr[i]==ch)
         {
             index = i;
         }
