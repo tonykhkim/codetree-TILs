@@ -8,7 +8,6 @@ int main()
 
     int A[n1];
     int B[n2];
-    int cnt = 0;
 
     for (int i=0;i<n1;i++)
     {
@@ -22,6 +21,8 @@ int main()
 
     for (int i=0;i<=n1-n2;i++)
     {
+        int cnt = 0;
+
         for (int j=0;j<n2;j++)
         {
             if (A[i+j]==B[j])
@@ -32,6 +33,11 @@ int main()
             {
                 cnt -= 1;
             }
+        }
+
+        if (cnt == n2)
+        {
+            break;
         }
     }
 
