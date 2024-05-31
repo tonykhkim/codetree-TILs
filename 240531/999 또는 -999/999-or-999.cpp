@@ -13,6 +13,11 @@ int main()
     {
         cin >> val;
 
+        if (val == 999 || val == -999)
+        {
+            break;
+        }
+
         if (val < min)
         {
             min = val;
@@ -22,10 +27,7 @@ int main()
             max = val;
         }
 
-        if (val == 999 || val == -999)
-        {
-            break;
-        }
+        
     }
 
     cout << max << " " << min;
