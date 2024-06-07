@@ -8,27 +8,28 @@ int main()
 
     int max = INT_MIN;
     int next_max = INT_MIN;
+    int index = 0;
 
     cin >> n;
 
-    int arr1[n];
-    int arr2[n-1];
+    int arr[n];
 
     for (int i=0;i<n;i++)
     {
-        cin >> arr1[i];
+        cin >> arr[i];
 
-        if (arr1[i] > max)
+        if (arr[i] > max)
         {
-            max = arr1[i];
+            max = arr[i];
+            index = i;
         }
+    }
 
-        for (int j=0;j<=i;j++)
+    for (int j=0;j<=n;j++)
+    {
+        if (arr[j] > next_max && arr[j] <= max && j != index)
         {
-            if (arr2[j] > next_max && arr2[j] <= max)
-            {
-                next_max = arr2[j];
-            }
+            next_max = arr[j];
         }
     }
 
