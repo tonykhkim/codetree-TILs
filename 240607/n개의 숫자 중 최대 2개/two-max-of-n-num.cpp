@@ -25,6 +25,8 @@ int main()
         }
     }
 
+    cout << "index : " << index << endl;
+
     for (int j=0;j<=n;j++)
     {
         if (arr[j] > next_max && arr[j] <= max && j != index)
