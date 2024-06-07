@@ -33,7 +33,7 @@ int main()
     {
         cout << max;
     }
-    else
+    else (cnt >= 2)
     {
         cout << -1;
     }
