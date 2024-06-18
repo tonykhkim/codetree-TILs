@@ -1,53 +1,33 @@
 #include <iostream>
-#include <climits>
+#define MAX_NUM 1000
+
 using namespace std;
+
 int main()
 {
     int n;
     cin >> n;
-    int arr[n];
-    int max_idx = 0;;
-    int min_idx = 0;
-    int min = INT_MAX;
-    int max = INT_MIN;
+    int price[MAX_NUM];
 
     for (int i=0;i<n;i++)
     {
-        cin >> arr[i];
+        cin >> price[i];
     }
+    int max_profit = 0;
 
     for (int i=0;i<n;i++)
     {
-        if (arr[i] < min)
+        for (int j=i+1;j<n;j++)
         {
-            min = arr[i];
-            min_idx = i;
-        }
-    }
+            int profit = price[j]-price[i];
 
-    if (min_idx == n-1)
-    {
-        cout << 0;
-    }
-    else
-    {
-        for (int i=min_idx;i<n;i++)
-        {
-            if (arr[i] > max)
+            if (profit > max_profit)
             {
-                max = arr[i];
+                max_profit = profit;
             }
         }
-
-        if (max-min <= 0)
-        {
-            cout << 0;
-        }
-        else
-        {
-            cout << max - min;
-        }
     }
+
+    cout << max_profit;
     return 0;
-    
 }
