@@ -5,16 +5,18 @@ using namespace std;
 int main()
 {
     string s;
-    int q, num, a, b;
+    int q, num;
     char temp, ch1, ch2;
     cin >> s >> q;
 
     for (int i=0;i<q;i++)
     {
-        cin >> num >> a >> b;
+        cin >> num;
 
         if (num == 1)
         {
+            int a, b;
+            cin >> a >> b;
             temp = s[a-1];
             s[a-1] = s[b-1];
             s[b-1] = temp;
@@ -22,11 +24,13 @@ int main()
         }
         else if (num == 2)
         {
+            char a,b;
+            cin >> a >> b;
             for (int j = 0; j < s.length(); j++)
             {
-                if (s[j] == s[a])
+                if (s[j] == a)
                 {
-                    s[j] = s[b];
+                    s[j] = b;
                 }
             }
             cout << s << endl;
