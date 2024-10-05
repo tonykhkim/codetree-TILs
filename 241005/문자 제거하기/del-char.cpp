@@ -11,8 +11,8 @@ int main()
     {
         cin >> num;
         len = str.length();
-        //cout << "num : " << num << endl;
-        //cout << "len : " << len << endl;
+        cout << "num : " << num << endl;
+        cout << "len : " << len << endl;
 
         if (len == 1)
         {
