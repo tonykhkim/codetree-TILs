@@ -8,10 +8,9 @@ int main()
 
     int num = (int)a - 1;
 
-    if (a == 'z')
+    if (num == 96)
     {
-        a = 'a';
-        num = (int)a;
+        num = 122;
     }
 
     cout << (char)num;
