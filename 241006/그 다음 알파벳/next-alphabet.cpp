@@ -8,11 +8,11 @@ int main()
     
     int num = (int)a + 1;
 
-    if (num == -1)
-    {
-        num = 97;
-    }
+    //if (num == -1)
+    //{
+    //    num = 97;
+    //}
 
-    cout << (char)num;
+    cout << (char)num << " " << num;
     return 0;
 }
